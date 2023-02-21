@@ -1,1 +1,1 @@
-# Sergio Ch\'{a}vez
+# Sergio Chavez
