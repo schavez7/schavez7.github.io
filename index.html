@@ -1,29 +1,38 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, intial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?
-        family=Dosis&display=swap" rel="stylesheet">
-        <title>Sergio Chavez's Website</title>
-    </head>
-    <body>
-        <div class="hero">
-            <div class="navbar">
-                <h1>Sergio Ch&aacutevez</h1>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="https://schavez7.github.io/Research">Research</a></li>
-                    <li><a href="#">Calligraphy</a></li>
-                </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0">
+    <title>Sergio's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">Sergio Chavez</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/index_about-me.html" class="navbar__links">About Me</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/index_research.html" class="navbar__links">Research</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/index_teaching.html" class="navbar__links">Teaching</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="button">Sign up</a>
+                </li>
+            </ul>
         </div>
-        <hr>
-        <h3>Soy estudiante de doctorado en matem&aacuteticas de la Universidad de Carolina del Norte</h3>
-        <p>Primera version de mi website.</p>
-           <img src="imagines/website_photo1.JPG", border="1", width="375", height="500">
-           
-    </body>
+    </nav>
+    <script src="app.js"></script>
+</body>
 </html>
