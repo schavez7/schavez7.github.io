@@ -1,11 +1,12 @@
 /* ===== Variables de couleurs ===== */
 :root {
   --charcoal: #1E2019;     /* couleur principale */
-  --teal: #005757;         /* couleur secondaire */
+  --cerulean: #1282A2;         /* couleur secondaire */
+  --rose: #F5D6BA: 
   --accent-clair: #BDDBD0; /* accent vert clair */
-  --accent-violet: #A675A1;/* accent violet */
-  --accent-fonce: #3C153B; /* accent violet foncé */
-  --texte-clair: #E8EAE9;  /* texte sur fond sombre */
+  --accent-rose: #A40E4C;/* accent rose */
+  --accent-fonce: #F5D6BA; /* accent rose foncé */
+  --texte-clair: #CCCCCC;  /* texte sur fond sombre */
 }
 
 /* ===== Réglages de base ===== */
@@ -17,8 +18,9 @@
 
 body {
   font-family: 'Segoe UI', system-ui, sans-serif;
-  color: var(--texte-clair);
-  background-color: var(--charcoal);
+  color: #FFFFFF;
+  background: linear-gradient(to right, #000000, #202C47, #000000);
+  background-attachment: fixed;
   line-height: 1.6;
 }
 
@@ -26,8 +28,8 @@ body {
 header {
   position: sticky;
   top: 0;
-  background-color: var(--charcoal);
-  border-bottom: 2px solid var(--teal);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid var(--cerulean);
   z-index: 100;
 }
 
@@ -43,7 +45,7 @@ nav {
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--accent-clair);
+  color: #FFFFFF;
 }
 
 .nav-links {
@@ -54,19 +56,19 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: var(--texte-clair);
+  color: #FFFFFF;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: var(--accent-clair);
+  color: var(--accent-rose);
 }
 
 /* ===== Section Hero ===== */
 .hero {
-  background-color: var(--teal);
-  color: var(--texte-clair);
+  background-color: transparent;
+  color: #FFFFFF;
   text-align: center;
   padding: 6rem 2rem;
 }
@@ -74,7 +76,7 @@ nav {
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: var(--accent-clair);
+  color: #FFFFFF;
 }
 
 .hero p {
@@ -85,8 +87,8 @@ nav {
 /* ===== Boutons ===== */
 .btn {
   display: inline-block;
-  background-color: var(--accent-violet);
-  color: var(--texte-clair);
+  background-color: #FFFFFF;
+  color: var(--accent-rose);
   padding: 0.8rem 2rem;
   border-radius: 4px;
   text-decoration: none;
@@ -95,7 +97,8 @@ nav {
 }
 
 .btn:hover {
-  background-color: var(--accent-fonce);
+  background-color: var(--cerulean);
+  color: #FFFFFF;
   transform: translateY(-2px);
 }
 
@@ -108,18 +111,18 @@ nav {
 }
 
 .section-alt {
-  background-color: var(--accent-fonce);
-  max-width: 100%;
+  background-color: transparent;
+  max-width: 1100px;
 }
 
 .section h2 {
   font-size: 2.2rem;
-  color: var(--teal);
+  color: #FFFFFF;
   margin-bottom: 1.5rem;
 }
 
 .section-alt h2 {
-  color: var(--accent-clair);
+  color: #FFFFFF;
 }
 
 .section p {
@@ -137,26 +140,26 @@ nav {
 }
 
 .card {
-  background-color: var(--charcoal);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 2rem;
   border-radius: 8px;
-  border: 1px solid var(--teal);
+  border: 1px solid var(--cerulean);
   transition: transform 0.3s, border-color 0.3s;
 }
 
 .card:hover {
   transform: translateY(-8px);
-  border-color: var(--accent-violet);
+  border-color: var(--accent-rose);
 }
 
 .card h3 {
-  color: var(--accent-violet);
+  color: #FFFFFF;
   margin-bottom: 1rem;
 }
 
 /* ===== Pied de page ===== */
 footer {
-  background-color: var(--teal);
+  background-color: var(--cerulean);
   color: var(--texte-clair);
   text-align: center;
   padding: 2rem;
